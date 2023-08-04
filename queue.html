@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="style/queue.css" />
+	<title>QUEUE</title>
+	<link rel="icon" type="image/x-icon" href="assects/queue.png">
+
+</head>
+
+<body>
+	<header>
+		<a href="index.html" id="homepage">
+			<img src="assects/back.png" alt="back">
+		</a>
+		<h1>QUEUE</h1>
+	</header>
+	<main>
+		<div class="canvas">
+			<ul class="fade">
+				<li class="show">
+					<span class="arrow" hidden></span>
+					<span class="ele">87</span>
+				</li>
+				<li class="show">
+					<span class="arrow"></span>
+					<span class="ele">23</span>
+				</li>
+				<li class="show">
+					<span class="arrow"></span>
+					<span class="ele">34</span>
+				</li>
+			</ul>
+		</div>
+
+		<div class="control">
+			<span class="controlchild" style="width: 15%; padding-right:0;">
+				<button type="submit" onclick="push()">ENQUEUE</button><br>
+				<button type="button" onclick="pop()">DEQUEUE</button><br>
+				<h3>FRONT:</h3>
+				<h3>REAR: </h3>
+				<h3>SIZE:</h3>
+				<h3>ERROR: </h3>
+				<h3>SET SIZE: </h3>
+			</span>
+			<span style="width:50%; padding:2rem;  padding-left:1rem">
+				<input type="number" />
+				<h3 id="frontval">87</h3>
+				<h3 id="backval">34</h3>
+				<h3 id="size">3</h3>
+				<h3 id="error">&nbsp;</h3>
+				<input type="number" />
+			</span>
+			<span class="controlchild ">
+				<h3>CODE: &nbsp;&nbsp;&nbsp;
+					<label for="array">
+						<input type="radio" name="queuetype" id="array" checked="checked">
+						Array
+					</label>
+					<label for="linkedlist">
+						<input type="radio" name="queuetype" id="linkedlist">
+						Linked List
+					</label>
+				</h3>
+				<code>---</code>
+			</span>
+		</div>
+	</main>
+	<footer>
+		<h3>STATUS:&nbsp;</h3>
+		<span id="caption">---</span>
+	</footer>
+
+	<script src="script/queue.js"></script>
+</body>
+
+</html>

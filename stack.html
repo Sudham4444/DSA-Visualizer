@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STACK</title>
+    <link rel="icon" type="image/x-icon" href="assects/stack.png">
+    <link rel="stylesheet" href="style/stack.css">
+</head>
+
+<body>
+    <header>
+        <a href="index.html" id="homepage" >
+            <img src="assects/back.png" alt="back">
+        </a>
+        <h1>STACK</h1>
+    </header>
+    <main>
+        <div id="canvas">
+            <ul class="fade">
+                <li class="show">23</li>
+                <li class="show">2</li>
+                <li class="show">67</li>
+            </ul>
+        </div>
+
+
+        <div id="control">
+            <div class="controlchild">
+                <span style="margin-right:3%">
+                    <button type="submit" onclick="push()">PUSH</button><br>
+                    <button type="button" onclick="pop()">POP</button><br>
+                    <h3>TOP: </h3>
+                    <h3>SIZE:</h3>
+                    <h3>ERROR: </h3>
+                    <h3>SET SIZE: </h3>
+                </span>
+                <span>
+                    <input type="number" />
+                    <h3 id="topval">23</h3>
+                    <h3 id="size">3</h3>
+                    <h3 id="error">&nbsp;</h3>
+                    <input type="number" />
+                </span>
+            </div>
+            <div style="margin-top: 2rem;">
+                <h3>CODE: &nbsp;&nbsp;&nbsp;
+                    <label for="array">
+                    <input type="radio" name="queuetype" id="array" checked="checked">
+                    Array
+                </label>
+                <label for="linkedlist">
+                    <input type="radio" name="queuetype" id="linkedlist">
+                    Linked List
+                </label></h3>
+                <code>---</code>
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        <h3>STATUS:&nbsp;</h3>
+        <span id="caption">---</span>
+    </footer>
+    <script src="script/stack.js"></script>
+</body>
+
+</html>
